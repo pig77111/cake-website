@@ -1,198 +1,263 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <style>
 
-        body{
+
+    <style>
+        body {
+
             padding: 0;
             margin: 0;
             color: #3E5B43;
 
         }
+
         a {
-            text-decoration-line:none;
-            color:#3E5B43 ;
+            text-decoration-line: none;
+            color: #3E5B43;
 
         }
 
-        .btn{
-            
+        .humberger {
+           /* 3E5C44  */
+            /* color: red; */
+            margin: auto;
+            /* width: 18px; */
+            /* height: 12px; */
         }
 
-        .btn::hover a{
+
+
+        .btn::hover a {
             background-color: #fff;
-            text-decoration-line: underline ;
+            text-decoration-line: underline;
             /* color:#3E5B43 ; */
         }
 
 
-        .d-flex{
+        .d-flex {
             display: flex;
         }
-        .flex-column{
+
+        .d-none {
+            display: none;
+        }
+
+        .flex-column {
             flex-direction: column;
         }
 
-        .container{
-            margin:0 auto;
-            
-            max-width: 940px;
-            /* min-width: 900px; */
+        .container {
+            margin: 0 auto;
+
+            max-width: 960px;
+
         }
 
-        .header{
+        .header {
             width: 100%;
             justify-content: space-between;
+
+
         }
-        .navbar{
+
+        .navbar {
             padding: 38px 0 40px 0;
+
             justify-content: space-between;
 
         }
 
-        .navbar > div{
+        .navbar>.home,
+        .sweet,
+        .login {
             font-size: 16px;
             line-height: 24px;
-            margin: 0 30px;
+            margin-right: 60px;
             justify-content: space-between;
 
         }
 
-        .navbar img{
+        .nav-img {
+
+            margin-left: 19px;
+        }
+
+        .navbar img {
             width: 24px;
             height: 24px;
-            
+
         }
 
 
 
-        .banner-img{
+        .logo-img {
             margin: auto 0;
             width: 230px;
         }
 
-        .content{
+
+        .banner img {
             width: 100%;
-            margin-top: 60px;
         }
 
-        .menu{
+
+
+        .content {
+            width: 100%;
+            margin-top: 60px;
+
+        }
+
+
+
+
+
+
+
+        .menu {
             width: 320px;
-            
+
             margin-right: 20px;
         }
 
-        .menu > .btn{
+        .menu>.btn {
             width: 300px;
             height: 65px;
             /* padding-right: 20px; */
-            
+
 
             display: flex;
             justify-content: center;
-            align-items:  center;
+            align-items: center;
             font-size: 24px;
             line-height: 40px;
             font-weight: 600;
-            
+
             color: #3E5B43;
             background-color: #fff;
-            border: 1px solid #EAF0ED;
-        }
 
-        .menu > .btn:hover{
-            text-decoration-line: underline;
-        }
-
-        .menu > .active{
-            /* color:#3E5B43 */
-
-            background-color:#EAF0ED;
-            
-
-
+            border-bottom: 1px solid #EAF0ED;
+            border-left: 1px solid #EAF0ED;
+            border-right: 1px solid #EAF0ED;
         }
 
         
 
-        .menu > .bg-green{
+        .menu>.btn ~ .btn:hover {
+            /* text-decoration-line: underline; */
+            background-color: #EAF0ED;
+            /* color: #3E5B43; */
+        }
+
+        .menu>.active {
+            /* color:#3E5B43 */
+
+            background-color: #EAF0ED;
+
+
+
+        }
+
+
+
+        .menu>.bg-green {
             background: #3E5B43;
             color: #ffff;
             font-size: 24px;
         }
 
-        .bg-green{
+        .bg-green {
             background: #3E5B43;
             color: #EAF0ED;
 
         }
 
-        .bg-lgreen{
-            background:#EAF0ED
-
+        .bg-lgreen {
+            background: #EAF0ED
         }
 
-        .product{
-            widows: 620px;;
-            /* outline: 1px solid orange; */
+        .product {
+            widows: 620px;
+            ;
+
             display: flex;
-            /* padding: 0 20px; */
-            /* padding: 0 5px; */
+
             justify-content: space-between;
             flex-wrap: wrap;
         }
 
 
-        .product-item{
+        .product-item {
             position: relative;
             width: 300px;
-            margin-bottom: 20px ;
-            /* margin: auto; */
-            
+            margin-bottom: 20px;
 
             font-size: 20px;
             font-weight: 600;
-            color:  #3E5B43;
+            color: #3E5B43;
             border: 1px solid #EAF0ED;
-        
-            /* padding-bottom: 20px; */
+
+
 
         }
 
-        .fw-600{
+        
+
+        .fw-600 {
             font-weight: 600;
 
         }
-        
-        .name , .price{
+
+        .name,
+        .price {
             font-weight: 300;
             /* line-height: ; */
             font-size: 20px;
-            color:#3E5B43;
-            padding:  14px 0 ;
+            color: #3E5B43;
+            padding: 14px 0;
+            margin: 0;
+
+
+
+
+
 
         }
 
-        .price{
+        .name {
+
+            border-right: 1px solid #EAF0ED;
+            margin-left: 33px;
+            padding-right: 33px;
+        }
+
+
+        .price {
             font-weight: 600;
+            margin-right: 33px;
+
+
+
         }
 
-        
 
-        
 
-        .product-item > img{
+
+
+        .product-item>img {
             width: 100%;
             height: 315px;
+            vertical-align: middle;
         }
 
-        .product-item > a > .btn{
-            /* width: 300px; */
-            /* height:  90px; */
+        .product-item>a>.btn {
+
             padding: 16px;
             font-weight: 600;
 
@@ -202,19 +267,21 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            /* width: 100%; */
+
+        }
+        .product-item>a>.btn:hover{
+            color: #ffff;
+            background-color: #3E5B43;
+            transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
         }
 
-        .tag{
+
+        .tag {
             position: absolute;
             display: flex;
-            
-            /* flex-direction: column; */
-
             padding: 16px;
 
-            /* align-content:  */
-            top:0;
+            top: 0;
 
             left: 0;
             font-size: 20px;
@@ -222,47 +289,46 @@
             color: #fff;
         }
 
-        .product-item .info{
-            
+        .product-item .info {
+
             display: flex;
-            padding: 0 20px 0 33px;
+            padding: 0;
             justify-content: space-between;
         }
 
-        .love{
+        .love {
             width: 20px;
             height: 20px;
             position: absolute;
             right: 22px;
-            top:19px;
+            top: 19px;
 
         }
 
 
-        .contact > .logo{
-            width: 100px;
-        }
 
 
-        .icon > img{
-            width: 30px;
+
+        .icon>img {
+            width: 40px;
 
         }
 
 
-        .page-group{
+        .page-group {
 
             justify-content: flex-end;
-            
+
         }
-        
 
 
-        .page{
+
+        .page {
             border: 1px solid #EAF0ED;
             width: 58px;
             height: 58px;
-            background: #ffffff;;
+            background: #ffffff;
+            ;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -270,140 +336,372 @@
 
 
         }
-        a >.page.active{
+
+        .page:hover {
+
+            background-color: #EAF0ED;
+
+        }
+
+        a>.page.active {
 
             background: #3E5B43;
             color: #fff;
         }
 
 
-        .footer{
+        .footer {
             max-width: 100%;
             margin: 60px auto 0;
         }
 
-        .footer > .contact{
+        .footer>.contact {
             height: 116px;
-            /* max-width: 940px; */
-            margin: 0 auto;
+
             display: flex;
 
 
         }
 
-        
-        .contact >  .container{
-            max-width: 940px;
+
+        .contact>.c-container {
+
+            justify-content: space-between;
         }
 
-        .contact{
+        .contact {
             margin: auto 0;
         }
 
-        .footer .logo{
+        .footer .logo img {
             width: 40px;
             height: 40px;
-            margin-top: 38.9px;
-            margin-bottom: 115.5px;
-            /* display: flex; */
-            /* justify-content: center; */
-            /* align-content: center; */
-            /* margin: auto 0 auto 122px; */
+
+            margin: auto 0px;
+
 
         }
-        .logo-text{
+
+        .contact .logo {
+            width: 276px;
+            display: flex;
+
+        }
+
+        .footer .c-container {
+
+            justify-content: space-between;
+        }
+
+        .logo-text {
             /* 上方綠色 */
             font-size: 24px;
+            line-height: 29px;
             text-align: center;
-            margin: auto 124px auto 20px;
+            margin: auto 0px auto 20px;
         }
 
-        .input-btn{
+        .input-btn {
             width: 380px;
             height: 56px;
         }
-        .shop-wrap,.copy-wrap{
+
+        .shop-wrap,
+        .copy-wrap,
+        .c-container {
             max-width: 940px;
-            margin: 0 auto;
-            
+            margin: auto;
+
 
         }
 
-        .copy-wrap{
+        .copy-wrap {
+            margin-top: 37px;
+        }
+
+        .footer .info,
+        .slogan,
+        .icon>img {
             margin-top: 30px;
         }
 
-        .footer .info ,.slogan,.icon > img{
-            margin-top: 30px;
-        }
-
-        .shop-wrap img{
+        .shop-wrap img {
             width: 171.22px;
             height: 26.6px;
-            margin-top:8.9px;
-           
-            
+            margin-top: 8.9px;
+
+
 
         }
 
-        .info-text{
+        .info-text {
             /* width: 227px; */
             margin-top: 115.5px;
+            color: #3E5B43;
 
 
         }
 
-        .shop-wrap > .info{
+        .shop-wrap>.info {
 
-            /* background: blue; */
-            
+
 
             font-size: 16px;
             line-height: 20px;
-            /* color: orchid; */
 
-            
-            /* width: 227px; */
             flex-direction: column;
 
         }
 
-        .icon img{
-            /* margin-top: 30px; */
-            
+        .icon img {
+
 
             width: 30px;
             height: 30px;
         }
 
-        .foot-bottom{
+        .foot-bottom {
             height: 341px;
         }
 
-        .slogan{
-            /* background: red; */
+        .slogan {
+
             font-size: 24px;
             width: 59.28px;
-            height: 218.69px;
+            color: #3E5B43;
+
             margin-left: auto;
+
         }
 
-        .copy{
+        .copy {
             font-size: 16px;
             line-height: 19px;
             display: flex;
-            /* justify-content: ; */
+
             align-items: flex-end;
             margin-left: auto;
+            color: #3E5B43;
+
         }
-        .slo-text1{
+
+        .slo-text1 {
             margin-top: 11.14px;
-            padding-right: 13.23px;;
+            padding-right: 13.23px;
+
+        }
+
+        .straight {
+
+
+            display: flex;
+            justify-content: center;
+
+
+        }
+
+        .straight>div {
+            width: 1px;
+            height: 50px;
+            background: #3E5B43;
+
+        }
+
+        .dot {
+
+
+            width: 30px;
+            height: 30px;
+            background-color: #3E5B43;
+
+
+        }
+
+
+
+        .input-btn {
+
+            padding: 30px 0;
+            margin-right: 0px;
+
+        }
+
+        .email-form {
+            position: relative;
+
+
+            height: 56px;
+        }
+
+
+
+        .email-form img {
+            position: absolute;
+            padding: 16px 20px;
+            pointer-events: none;
         }
 
 
 
 
+        .email-form input {
+            width: 316px;
+            height: 56px;
+            border: none;
+            padding: 0;
+        }
+
+        .input-btn>button {
+            width: 64px;
+            height: 56px;
+            background: #FFE180;
+            border: none;
+
+
+        }
+
+
+
+
+        @media screen and (max-width:414px) {
+
+
+            .home,
+            .sweet,
+            .login {
+                display: none;
+            }
+
+            .humberger {
+                display: flex;
+
+                display: flex;
+                margin: auto 20px;
+
+            }
+
+            .nav-img {
+    
+            margin-right: 20px;}
+
+            
+
+            .banner {
+                width: 100%;
+            }
+
+
+
+
+
+            .content {
+                flex-direction: column;
+            }
+
+            .menu {
+                width: 100%;
+            }
+
+            .product{
+                margin-top:15px ;
+            }
+
+
+            .product-item {
+
+                margin: 15px auto ;
+            }
+
+
+
+            .page-group {
+                justify-content: center;
+            }
+
+            .contact {
+                flex-direction: column;
+                margin: 30px auto 0;
+                font: normal normal normal 24px/29px Helvetica Neue;
+
+            }
+
+            .footer {
+                flex-direction: column;
+            }
+
+            .contact>.logo {
+                margin: 30px auto;
+            }
+
+
+
+            .input-btn {
+                width: 315px;
+                /* height: 56px; */
+                margin: auto;
+                /* justify-content: center; */
+
+                /* flex-wrap: nowrap; */
+
+            }
+
+            .email-form {
+                width: 251px;
+            }
+
+
+
+
+
+
+            .footer {
+                margin-top: 30px;
+            }
+
+            .foot-bottom {
+                height: 100%;
+                flex-direction: column;
+                padding-left: 30px;
+            }
+
+            .slogan {
+                display: none;
+            }
+
+            .copy-wrap {
+                flex-direction: column;
+
+            }
+
+
+            .copy {
+                align-items: flex-start;
+                margin: 23px 0 0 0;
+            }
+
+            .footer>.contact {
+                height: 100%;
+                display: flex;
+            }
+
+            .shop-wrap {
+                flex-direction: column;
+            }
+
+            button img {
+                width: 16px;
+                height: 1vh;
+                margin: 20px 24px;
+            }
+
+            .content {
+                width: 100%;
+                margin-top: 0;
+            }
+
+            .menu>.btn {
+                width: 100%;
+            }
 
 
 
@@ -412,15 +710,35 @@
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+        }
     </style>
 </head>
+
 <body>
 
     <div class="container">
         <div class="header d-flex">
-            <div class="banner-img">
-                <img src="logo-all-dark.svg" alt="" class="logo">
+
+            <div class="humberger d-none ">
+                <img src="dehaze-24px.png" alt="">
             </div>
+
+            <a href="#" class="logo-img">
+                <img src="logo-all-dark.svg" alt="" class="logo">
+            </a>
+
+
 
 
             <div class="navbar d-flex">
@@ -437,12 +755,18 @@
                     <a href="#"><img src="shopping_cart.png" alt=""></a>
                 </div>
             </div>
+
+
         </div>
-        <div class="banner"> 
+        <div class="banner">
             <img src="banner.png" alt="">
         </div>
-    
-    
+
+        <div class="banner-s d-none">
+            <img src="" alt="">
+        </div>
+
+
         <div class="content d-flex">
             <div class="menu d-flex flex-column">
                 <div class="title-btn btn bg-green">
@@ -460,174 +784,210 @@
                 <div class="btn">
                     <a href="#">新品上市 (12)</a>
                 </div>
-                
+
             </div>
-            
+
             <div class="product">
                 <div class="product-item">
                     <img src="p-1.png" alt="">
-                        <div class="info d-flex">
-                            <div class="name">焦糖馬卡龍</div>
-                            <div class="price">NT $ 450</div>
-                        </div>
+                    <div class="info d-flex">
+                        <div class="name">焦糖馬卡龍</div>
+                        <div class="price">NT $ 450</div>
+                    </div>
 
 
-                        <a href="#"><div class="btn">
+                    <a href="#">
+                        <div class="btn">
                             加入購物車
-                        </div></a>
+                        </div>
+                    </a>
 
 
-                        <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
+                    <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
 
-                        <a href="#"><div class="love">
-                        <img src="favorite_border.png" alt="">
-                        </div></a>
+                    <a href="#">
+                        <div class="love">
+                            <img src="favorite_border.png" alt="">
+                        </div>
+                    </a>
 
-                        
+
                 </div>
                 <div class="product-item">
                     <img src="p-2.png" alt="">
-                        <div class="info d-flex">
-                            <div class="name">焦糖馬卡龍</div>
-                            <div class="price">NT $ 450</div>
-                        </div>
+                    <div class="info d-flex">
+                        <div class="name">焦糖馬卡龍</div>
+                        <div class="price">NT $ 450</div>
+                    </div>
 
 
-                        <a href="#"><div class="btn">
+                    <a href="#">
+                        <div class="btn">
                             加入購物車
-                        </div></a>
+                        </div>
+                    </a>
 
-                        <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
+                    <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
 
-                        <a href="#"><div class="love">
-                        <img src="favorite_border.png" alt="">
-                        </div></a>
+                    <a href="#">
+                        <div class="love">
+                            <img src="favorite_border.png" alt="">
+                        </div>
+                    </a>
                 </div>
                 <div class="product-item">
                     <img src="p-3.png" alt="">
-                        <div class="info d-flex">
-                            <div class="name">焦糖馬卡龍</div>
-                            <div class="price">NT $ 450</div>
-                        </div>
+                    <div class="info d-flex">
+                        <div class="name">焦糖馬卡龍</div>
+                        <div class="price">NT $ 450</div>
+                    </div>
 
 
-                        <a href="#"><div class="btn">
+                    <a href="#">
+                        <div class="btn">
                             加入購物車
-                        </div></a>
+                        </div>
+                    </a>
 
-                        <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
+                    <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
 
-                        <a href="#"><div class="love">
-                        <img src="favorite_border.png" alt="">
-                        </div></a>
+                    <a href="#">
+                        <div class="love">
+                            <img src="favorite_border.png" alt="">
+                        </div>
+                    </a>
                 </div>
                 <div class="product-item">
                     <img src="p-4.png" alt="">
-                        <div class="info d-flex">
-                            <div class="name">焦糖馬卡龍</div>
-                            <div class="price">NT $ 450</div>
-                        </div>
+                    <div class="info d-flex">
+                        <div class="name">焦糖馬卡龍</div>
+                        <div class="price">NT $ 450</div>
+                    </div>
 
 
-                        <a href="#"><div class="btn">
+                    <a href="#">
+                        <div class="btn">
                             加入購物車
-                        </div></a>
+                        </div>
+                    </a>
 
-                        <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
+                    <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
 
-                        <a href="#"><div class="love">
-                        <img src="favorite_border.png" alt="">
-                        </div></a>
+                    <a href="#">
+                        <div class="love">
+                            <img src="favorite_border.png" alt="">
+                        </div>
+                    </a>
                 </div>
                 <div class="product-item">
                     <img src="p-5.png" alt="">
-                        <div class="info d-flex">
-                            <div class="name">焦糖馬卡龍</div>
-                            <div class="price">NT $ 450</div>
-                        </div>
+                    <div class="info d-flex">
+                        <div class="name">焦糖馬卡龍</div>
+                        <div class="price">NT $ 450</div>
+                    </div>
 
 
-                        <a href="#"><div class="btn">
+                    <a href="#">
+                        <div class="btn">
                             加入購物車
-                        </div></a>
-                        <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
+                        </div>
+                    </a>
+                    <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
 
-                        <a href="#"><div class="love">
-                        <img src="favorite_border.png" alt="">
-                        </div></a>
+                    <a href="#">
+                        <div class="love">
+                            <img src="favorite_border.png" alt="">
+                        </div>
+                    </a>
                 </div>
                 <div class="product-item">
                     <img src="p-6.png" alt="">
-                        <div class="info">
-                            <div class="name">焦糖馬卡龍</div>
-                            <div class="price">NT $ 450</div>
-                        </div>
+                    <div class="info">
+                        <div class="name">焦糖馬卡龍</div>
+                        <div class="price">NT $ 450</div>
+                    </div>
 
 
-                        <a href="#"><div class="btn">
+                    <a href="#">
+                        <div class="btn">
                             加入購物車
-                        </div></a>
-                        <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
+                        </div>
+                    </a>
+                    <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
 
-                        <a href="#"><div class="love">
-                        <img src="favorite_border.png" alt="">
-                        </div></a>
+                    <a href="#">
+                        <div class="love">
+                            <img src="favorite_border.png" alt="">
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
 
         <div class="page-group d-flex">
-            <a href="#" > 
+            <a href="#">
                 <div class="page left">
                     <img src="arrow_left.png" alt="">
                 </div>
             </a>
 
-            <a href="#"><div class="page active ">1</div></a>
+            <a href="#">
+                <div class="page active ">1</div>
+            </a>
 
-            <a href="#"><div class="page ">2</div></a>
-            <a href="#"><div class="page ">3</div></a>
+            <a href="#">
+                <div class="page ">2</div>
+            </a>
+            <a href="#">
+                <div class="page ">3</div>
+            </a>
 
-            <a href="#" > 
+            <a href="#">
                 <div class="page right">
                     <img src="arrow_right.png" alt="">
                 </div>
             </a>
 
         </div>
-    
-    
-    
-        
+
+
+
+
     </div>
 
-    <div class="footer ">
-        <div class="contact  bg-green">
-            <div class="container d-flex">
-                <div class="logo ">
-                    <img src="logo-light.svg" alt="">
-                    
-                      
-                    
-                </div>
+    <div class="footer bg-green">
+        <div class="contact  bg-green d-flex c-container ">
+
+            <div class="logo d-flex">
+                <img src="logo-light.svg" alt="">
                 <div class="logo-text">
                     訂閱你我的甜蜜郵件
                 </div>
-    
-                <div class="input-btn d-flex">
-    
-                    <div class="form-group">
-                            <label for="email"></label>
-                            <input type="email" name="" id="email" class="form-control" >
-                            <img src="mail-24px.png" alt="" srcset="">
-    
-                            <button> <img src="arrow_forward-24px.png" alt=""></button>
-                    </div>
-    
-                    
-                    
-                </div>
+
+
+
             </div>
+
+
+            <div class="input-btn d-flex bg-green">
+
+                <div class="email-form ">
+
+
+
+                    <img src="mail-24px.png" alt="">
+                    <input type="email" name="" id="email" class="form-control" style="">
+
+
+
+
+                </div>
+                <button> <a href="#"><img src="arrow_forward-24px.png" alt=""></a></button>
+
+
+
+            </div>
+
 
 
         </div>
@@ -639,24 +999,38 @@
 
                     <div class="info-text">
                         07-1234-5678 <br>
-                        sweetaste@email.com  <br>
+                        sweetaste@email.com <br>
                         800 高雄市新興區幸福路 520 號 <br>
                     </div>
-                
-                
-                
+
+
+
                 </div>
-    
+
                 <div class="slogan d-flex ">
-                     
-                     
-                     <div class="slo-text1">
-                         吃<br>甜<br>點<br>的<br>日<br>子<br>。
-                     </div>
-                     <div class="slo-text2">
-                        今<br>天<br>是<br>個<br> |
+
+
+                    <div class="slo-text1">
+                        <div>吃</div>
+                        <div>甜</div>
+                        <div>點</div>
+                        <div>的</div>
+                        <div>日</div>
+                        <div>子</div>
+                        <div class=".dot">
+
+                        </div>
                     </div>
-                   
+                    <div class="slo-text2">
+                        <div>今</div>
+                        <div>天</div>
+                        <div>是</div>
+                        <div>個</div>
+                        <div class="straight">
+                            <div></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
             <div class="copy-wrap d-flex">
@@ -676,6 +1050,9 @@
 
 
 
-    
+
+
+
 </body>
+
 </html>
