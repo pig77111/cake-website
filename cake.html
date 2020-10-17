@@ -6,702 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <link rel="stylesheet" href="/index.css">
+
 
 
     <style>
-        body {
-
-            padding: 0;
-            margin: 0;
-            color: #3E5B43;
-
-        }
-
-        a {
-            text-decoration-line: none;
-            color: #3E5B43;
-
-        }
-
-        .humberger {
-           /* 3E5C44  */
-            /* color: red; */
-            margin: auto;
-            /* width: 18px; */
-            /* height: 12px; */
-        }
-
-
-
-        .btn::hover a {
-            background-color: #fff;
-            text-decoration-line: underline;
-            /* color:#3E5B43 ; */
-        }
-
-
-        .d-flex {
-            display: flex;
-        }
-
-        .d-none {
-            display: none;
-        }
-
-        .flex-column {
-            flex-direction: column;
-        }
-
-        .container {
-            margin: 0 auto;
-
-            max-width: 960px;
-
-        }
-
-        .header {
-            width: 100%;
-            justify-content: space-between;
-
-
-        }
-
-        .navbar {
-            padding: 38px 0 40px 0;
-
-            justify-content: space-between;
-
-        }
-
-        .navbar>.home,
-        .sweet,
-        .login {
-            font-size: 16px;
-            line-height: 24px;
-            margin-right: 60px;
-            justify-content: space-between;
-
-        }
-
-        .nav-img {
-
-            margin-left: 19px;
-        }
-
-        .navbar img {
-            width: 24px;
-            height: 24px;
-
-        }
-
-
-
-        .logo-img {
-            margin: auto 0;
-            width: 230px;
-        }
-
-
-        .banner img {
-            width: 100%;
-        }
-
-
-
-        .content {
-            width: 100%;
-            margin-top: 60px;
-
-        }
-
-
-
-
-
-
-
-        .menu {
-            width: 320px;
-
-            margin-right: 20px;
-        }
-
-        .menu>.btn {
-            width: 300px;
-            height: 65px;
-            /* padding-right: 20px; */
-
-
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 24px;
-            line-height: 40px;
-            font-weight: 600;
-
-            color: #3E5B43;
-            background-color: #fff;
-
-            border-bottom: 1px solid #EAF0ED;
-            border-left: 1px solid #EAF0ED;
-            border-right: 1px solid #EAF0ED;
-        }
-
         
-
-        .menu>.btn ~ .btn:hover {
-            /* text-decoration-line: underline; */
-            background-color: #EAF0ED;
-            /* color: #3E5B43; */
-        }
-
-        .menu>.active {
-            /* color:#3E5B43 */
-
-            background-color: #EAF0ED;
-
-
-
-        }
-
-
-
-        .menu>.bg-green {
-            background: #3E5B43;
-            color: #ffff;
-            font-size: 24px;
-        }
-
-        .bg-green {
-            background: #3E5B43;
-            color: #EAF0ED;
-
-        }
-
-        .bg-lgreen {
-            background: #EAF0ED
-        }
-
-        .product {
-            widows: 620px;
-            ;
-
-            display: flex;
-
-            justify-content: space-between;
-            flex-wrap: wrap;
-        }
-
-
-        .product-item {
-            position: relative;
-            width: 300px;
-            margin-bottom: 20px;
-
-            font-size: 20px;
-            font-weight: 600;
-            color: #3E5B43;
-            border: 1px solid #EAF0ED;
-
-
-
-        }
-
-        
-
-        .fw-600 {
-            font-weight: 600;
-
-        }
-
-        .name,
-        .price {
-            font-weight: 300;
-            /* line-height: ; */
-            font-size: 20px;
-            color: #3E5B43;
-            padding: 14px 0;
-            margin: 0;
-
-
-
-
-
-
-        }
-
-        .name {
-
-            border-right: 1px solid #EAF0ED;
-            margin-left: 33px;
-            padding-right: 33px;
-        }
-
-
-        .price {
-            font-weight: 600;
-            margin-right: 33px;
-
-
-
-        }
-
-
-
-
-
-        .product-item>img {
-            width: 100%;
-            height: 315px;
-            vertical-align: middle;
-        }
-
-        .product-item>a>.btn {
-
-            padding: 16px;
-            font-weight: 600;
-
-
-
-            background: #EAF0ED;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-
-        }
-        .product-item>a>.btn:hover{
-            color: #ffff;
-            background-color: #3E5B43;
-            transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-        }
-
-
-        .tag {
-            position: absolute;
-            display: flex;
-            padding: 16px;
-
-            top: 0;
-
-            left: 0;
-            font-size: 20px;
-            background: #3E5B43;
-            color: #fff;
-        }
-
-        .product-item .info {
-
-            display: flex;
-            padding: 0;
-            justify-content: space-between;
-        }
-
-        .love {
-            width: 20px;
-            height: 20px;
-            position: absolute;
-            right: 22px;
-            top: 19px;
-
-        }
-
-
-
-
-
-        .icon>img {
-            width: 40px;
-
-        }
-
-
-        .page-group {
-
-            justify-content: flex-end;
-
-        }
-
-
-
-        .page {
-            border: 1px solid #EAF0ED;
-            width: 58px;
-            height: 58px;
-            background: #ffffff;
-            ;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            font-size: 20px;
-
-
-        }
-
-        .page:hover {
-
-            background-color: #EAF0ED;
-
-        }
-
-        a>.page.active {
-
-            background: #3E5B43;
-            color: #fff;
-        }
-
-
-        .footer {
-            max-width: 100%;
-            margin: 60px auto 0;
-        }
-
-        .footer>.contact {
-            height: 116px;
-
-            display: flex;
-
-
-        }
-
-
-        .contact>.c-container {
-
-            justify-content: space-between;
-        }
-
-        .contact {
-            margin: auto 0;
-        }
-
-        .footer .logo img {
-            width: 40px;
-            height: 40px;
-
-            margin: auto 0px;
-
-
-        }
-
-        .contact .logo {
-            width: 276px;
-            display: flex;
-
-        }
-
-        .footer .c-container {
-
-            justify-content: space-between;
-        }
-
-        .logo-text {
-            /* 上方綠色 */
-            font-size: 24px;
-            line-height: 29px;
-            text-align: center;
-            margin: auto 0px auto 20px;
-        }
-
-        .input-btn {
-            width: 380px;
-            height: 56px;
-        }
-
-        .shop-wrap,
-        .copy-wrap,
-        .c-container {
-            max-width: 940px;
-            margin: auto;
-
-
-        }
-
-        .copy-wrap {
-            margin-top: 37px;
-        }
-
-        .footer .info,
-        .slogan,
-        .icon>img {
-            margin-top: 30px;
-        }
-
-        .shop-wrap img {
-            width: 171.22px;
-            height: 26.6px;
-            margin-top: 8.9px;
-
-
-
-        }
-
-        .info-text {
-            /* width: 227px; */
-            margin-top: 115.5px;
-            color: #3E5B43;
-
-
-        }
-
-        .shop-wrap>.info {
-
-
-
-            font-size: 16px;
-            line-height: 20px;
-
-            flex-direction: column;
-
-        }
-
-        .icon img {
-
-
-            width: 30px;
-            height: 30px;
-        }
-
-        .foot-bottom {
-            height: 341px;
-        }
-
-        .slogan {
-
-            font-size: 24px;
-            width: 59.28px;
-            color: #3E5B43;
-
-            margin-left: auto;
-
-        }
-
-        .copy {
-            font-size: 16px;
-            line-height: 19px;
-            display: flex;
-
-            align-items: flex-end;
-            margin-left: auto;
-            color: #3E5B43;
-
-        }
-
-        .slo-text1 {
-            margin-top: 11.14px;
-            padding-right: 13.23px;
-
-        }
-
-        .straight {
-
-
-            display: flex;
-            justify-content: center;
-
-
-        }
-
-        .straight>div {
-            width: 1px;
-            height: 50px;
-            background: #3E5B43;
-
-        }
-
-        .dot {
-
-
-            width: 30px;
-            height: 30px;
-            background-color: #3E5B43;
-
-
-        }
-
-
-
-        .input-btn {
-
-            padding: 30px 0;
-            margin-right: 0px;
-
-        }
-
-        .email-form {
-            position: relative;
-
-
-            height: 56px;
-        }
-
-
-
-        .email-form img {
-            position: absolute;
-            padding: 16px 20px;
-            pointer-events: none;
-        }
-
-
-
-
-        .email-form input {
-            width: 316px;
-            height: 56px;
-            border: none;
-            padding: 0;
-        }
-
-        .input-btn>button {
-            width: 64px;
-            height: 56px;
-            background: #FFE180;
-            border: none;
-
-
-        }
-
-
-
-
-        @media screen and (max-width:414px) {
-
-
-            .home,
-            .sweet,
-            .login {
-                display: none;
-            }
-
-            .humberger {
-                display: flex;
-
-                display: flex;
-                margin: auto 20px;
-
-            }
-
-            .nav-img {
-    
-            margin-right: 20px;}
-
-            
-
-            .banner {
-                width: 100%;
-            }
-
-
-
-
-
-            .content {
-                flex-direction: column;
-            }
-
-            .menu {
-                width: 100%;
-            }
-
-            .product{
-                margin-top:15px ;
-            }
-
-
-            .product-item {
-
-                margin: 15px auto ;
-            }
-
-
-
-            .page-group {
-                justify-content: center;
-            }
-
-            .contact {
-                flex-direction: column;
-                margin: 30px auto 0;
-                font: normal normal normal 24px/29px Helvetica Neue;
-
-            }
-
-            .footer {
-                flex-direction: column;
-            }
-
-            .contact>.logo {
-                margin: 30px auto;
-            }
-
-
-
-            .input-btn {
-                width: 315px;
-                /* height: 56px; */
-                margin: auto;
-                /* justify-content: center; */
-
-                /* flex-wrap: nowrap; */
-
-            }
-
-            .email-form {
-                width: 251px;
-            }
-
-
-
-
-
-
-            .footer {
-                margin-top: 30px;
-            }
-
-            .foot-bottom {
-                height: 100%;
-                flex-direction: column;
-                padding-left: 30px;
-            }
-
-            .slogan {
-                display: none;
-            }
-
-            .copy-wrap {
-                flex-direction: column;
-
-            }
-
-
-            .copy {
-                align-items: flex-start;
-                margin: 23px 0 0 0;
-            }
-
-            .footer>.contact {
-                height: 100%;
-                display: flex;
-            }
-
-            .shop-wrap {
-                flex-direction: column;
-            }
-
-            button img {
-                width: 16px;
-                height: 1vh;
-                margin: 20px 24px;
-            }
-
-            .content {
-                width: 100%;
-                margin-top: 0;
-            }
-
-            .menu>.btn {
-                width: 100%;
-            }
 
 
 
@@ -727,6 +37,7 @@
 
 <body>
 
+
     <div class="container">
         <div class="header d-flex">
 
@@ -734,7 +45,7 @@
                 <img src="dehaze-24px.png" alt="">
             </div>
 
-            <a href="#" class="logo-img">
+            <a href="#" class="logo-img" data-aos="fade-up-right">
                 <img src="logo-all-dark.svg" alt="" class="logo">
             </a>
 
@@ -758,48 +69,47 @@
 
 
         </div>
-        <div class="banner">
+        <div class="banner" data-aos="zoom-in-right" data-aos-offset="0" data-aos-delay="300" data-aos-duration="600"
+            data-aos-mirror="true" data-aos-once="true">
             <img src="banner.png" alt="">
         </div>
 
-        <div class="banner-s d-none">
-            <img src="" alt="">
-        </div>
+
 
 
         <div class="content d-flex">
-            <div class="menu d-flex flex-column">
+            <div class="menu d-flex flex-column" data-aos="fade-up-right">
                 <div class="title-btn btn bg-green">
                     甜點類別
                 </div>
-                <div class="active btn ">
+                <div class="active btn " data-aos="fade-up-right">
                     <a href="#">所有甜點 (48)</a>
                 </div>
-                <div class="btn">
+                <div class="btn" data-aos="fade-up-right">
                     <a href="#">本日精選 (10)</a>
                 </div>
-                <div class="btn">
+                <div class="btn" data-aos="fade-up-right">
                     <a href="#">人氣推薦 (26)</a>
                 </div>
-                <div class="btn">
+                <div class="btn" data-aos="fade-up-right">
                     <a href="#">新品上市 (12)</a>
                 </div>
 
             </div>
 
             <div class="product">
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up-right">
                     <img src="p-1.png" alt="">
                     <div class="info d-flex">
-                        <div class="name">焦糖馬卡龍</div>
+                        <div class="name">焦糖馬卡龍焦糖馬卡龍11111</div>
                         <div class="price">NT $ 450</div>
                     </div>
 
 
-                    <a href="#">
-                        <div class="btn">
+                    <a href="#" class="btn">
+                        
                             加入購物車
-                        </div>
+                        
                     </a>
 
 
@@ -813,7 +123,7 @@
 
 
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up-left">
                     <img src="p-2.png" alt="">
                     <div class="info d-flex">
                         <div class="name">焦糖馬卡龍</div>
@@ -821,10 +131,10 @@
                     </div>
 
 
-                    <a href="#">
-                        <div class="btn">
+                    <a href="#" class="btn">
+                        
                             加入購物車
-                        </div>
+                        
                     </a>
 
                     <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
@@ -835,7 +145,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up-right">
                     <img src="p-3.png" alt="">
                     <div class="info d-flex">
                         <div class="name">焦糖馬卡龍</div>
@@ -843,10 +153,10 @@
                     </div>
 
 
-                    <a href="#">
-                        <div class="btn">
+                    <a href="#" class="btn">
+                        
                             加入購物車
-                        </div>
+                        
                     </a>
 
                     <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
@@ -857,7 +167,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up-left">
                     <img src="p-4.png" alt="">
                     <div class="info d-flex">
                         <div class="name">焦糖馬卡龍</div>
@@ -865,10 +175,10 @@
                     </div>
 
 
-                    <a href="#">
-                        <div class="btn">
+                    <a href="#" class="btn">
+                        
                             加入購物車
-                        </div>
+                        
                     </a>
 
                     <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
@@ -879,7 +189,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up-right">
                     <img src="p-5.png" alt="">
                     <div class="info d-flex">
                         <div class="name">焦糖馬卡龍</div>
@@ -887,10 +197,10 @@
                     </div>
 
 
-                    <a href="#">
-                        <div class="btn">
+                    <a href="#" class="btn">
+                        
                             加入購物車
-                        </div>
+                        
                     </a>
                     <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
 
@@ -900,7 +210,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="product-item">
+                <div class="product-item" data-aos="fade-up-left">
                     <img src="p-6.png" alt="">
                     <div class="info">
                         <div class="name">焦糖馬卡龍</div>
@@ -908,10 +218,10 @@
                     </div>
 
 
-                    <a href="#">
-                        <div class="btn">
+                    <a href="#" class="btn">
+                        
                             加入購物車
-                        </div>
+                        
                     </a>
                     <div class="tag bg-green">本 <br> 日 <br> 精 <br> 選</div>
 
@@ -958,7 +268,7 @@
     <div class="footer bg-green">
         <div class="contact  bg-green d-flex c-container ">
 
-            <div class="logo d-flex">
+            <div class="logo d-flex" data-aos="fade-up-right">
                 <img src="logo-light.svg" alt="">
                 <div class="logo-text">
                     訂閱你我的甜蜜郵件
@@ -992,9 +302,9 @@
 
         </div>
 
-        <div class="foot-bottom bg-lgreen">
+        <div class="foot-bottom bg-lgreen data-aos=" fade-up-right"">
             <div class="shop-wrap d-flex">
-                <div class="info d-flex">
+                <div class="info d-flex" data-aos="zoom-out-left">
                     <img src="logotype-sm-dark.svg" alt="">
 
                     <div class="info-text">
@@ -1046,6 +356,39 @@
             </div>
         </div>
     </div>
+
+
+
+
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        // AOS.init();
+
+        AOS.init({
+            // Global settings:
+            disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+            startEvent: 'DOMContentLoaded', // name of the event dispatched on the document, that AOS should initialize on
+            initClassName: 'aos-init', // class applied after initialization
+            animatedClassName: 'aos-animate', // class applied on animation
+            useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+            disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+            debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+            throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+
+            // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+            offset: 200, // offset (in px) from the original trigger point
+            delay: 200, // values from 0 to 3000, with step 50ms
+            duration: 600, // values from 0 to 3000, with step 50ms
+            easing: 'ease', // default easing for AOS animations
+            once: true, // whether animation should happen only once - while scrolling down
+            mirror: false, // whether elements should animate out while scrolling past them
+            anchorPlacement: 'top-bottom', // defines which position of the element regarding to window should trigger the animation
+
+        });
+    </script>
 
 
 
