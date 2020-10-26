@@ -2,15 +2,15 @@
 
 // sec1 start done
 
-@import '/scss/bootstrap.scss' 
+@import 'scss/bootstrap.scss'; 
 
 body {
 
             padding: 0;
             margin: 0;
-            color: #3E5B43;}
+            color: #3E5B43}
 
-        a {
+        a:hover{
             text-decoration-line: none;
             color: #3E5B43;
 
@@ -108,13 +108,14 @@ body {
 
 
 
-            margin-left: 19px;
+            // margin-left: 19px;
 
-            :hover {
+            a:hover {
+                border-bottom: #EAF0ED 2px solid;
 
-                background-color: #EAF0ED;
+                
    
-               margin-left: 19px;
+            //    margin-left: 19px;
            }
         }
 
