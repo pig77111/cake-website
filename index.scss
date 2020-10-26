@@ -19,13 +19,17 @@ a {
     margin: auto;
 }
 
-.btn:hover {
-    background-color: #eaf0ed;
+.btn
+{
+    &:hover {
+    background-color: #eaf0ed;}
     a {
         
         text-decoration-line: none;
     }
+
 }
+
 
 .d-flex {
     display: flex;
