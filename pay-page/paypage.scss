@@ -2,6 +2,7 @@
 
 @import "../scss/bootstrap.scss";
 
+
 // 自己寫的
 body {
     padding: 0;
@@ -21,14 +22,24 @@ a {
     margin: auto 0px auto 5px;
 }
 
-.btn {
+a.btn {
     &:hover {
-        background-color: #FEE180;
+        // background-color: #FEE180;
+        // background-color: red;
     }
     a {
         text-decoration-line: none;
     }
 }
+
+// 本頁hover 
+
+.keepshop{
+    &:hover{
+        // background-color: #f8d665;
+    }
+}
+
 
 .d-flex {
     display: flex;
@@ -118,39 +129,39 @@ a {
     margin-top: 60px;
 }
 
-.menu {
-    width: 320px;
+// .menu {
+//     width: 320px;
 
-    margin-right: 20px;
+//     margin-right: 20px;
 
-    .btn {
-        width: 300px;
-        height: 65px;
+//     .btn {
+//         width: 300px;
+//         height: 65px;
 
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 24px;
-        line-height: 40px;
-        font-weight: 600;
+//         display: flex;
+//         justify-content: center;
+//         align-items: center;
+//         font-size: 24px;
+//         line-height: 40px;
+//         font-weight: 600;
 
-        color: #3e5b43;
+//         color: #3e5b43;
 
-        border-bottom: 1px solid #eaf0ed;
-        border-left: 1px solid #eaf0ed;
-        border-right: 1px solid #eaf0ed;
-    }
+//         border-bottom: 1px solid #eaf0ed;
+//         border-left: 1px solid #eaf0ed;
+//         border-right: 1px solid #eaf0ed;
+//     }
 
-    .active {
-        background-color: #eaf0ed;
-    }
+//     .active {
+//         background-color: #eaf0ed;
+//     }
 
-    .bg-green {
-        background: #3e5b43;
-        color: #ffff;
-        font-size: 24px;
-    }
-}
+//     .bg-green {
+//         background: #3e5b43;
+//         color: #ffff;
+//         font-size: 24px;
+//     }
+// }
 
 // sec2 end
 
@@ -163,53 +174,53 @@ a {
     background: #eaf0ed;
 }
 
-.product {
-    widows: 620px;
+// .product {
+//     widows: 620px;
 
-    display: flex;
+//     display: flex;
 
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+// }
 
-.product-item {
-    position: relative;
-    width: 300px;
-    margin-bottom: 20px;
+// .product-item {
+//     position: relative;
+//     width: 300px;
+//     margin-bottom: 20px;
 
-    font-size: 20px;
-    font-weight: 600;
-    color: #3e5b43;
-    border: 1px solid #eaf0ed;
+//     font-size: 20px;
+//     font-weight: 600;
+//     color: #3e5b43;
+//     border: 1px solid #eaf0ed;
 
-    img {
-        width: 100%;
-        height: 315px;
-        vertical-align: middle;
-    }
+//     img {
+//         width: 100%;
+//         height: 315px;
+//         vertical-align: middle;
+//     }
 
-    a.btn {
-        display: block;
+//     a.btn {
+//         display: block;
 
-        padding: 16px;
-        font-weight: 600;
+//         padding: 16px;
+//         font-weight: 600;
 
-        background: #eaf0ed;
-        text-align: center;
+//         background: #eaf0ed;
+//         text-align: center;
 
-        &:hover {
-            color:  #3e5b43!important;
-            background-color:  #FEE180!important;
-            transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
-        }
-    }
+//         &:hover {
+//             color:  #3e5b43!important;
+//             background-color:  #FEE180!important;
+//             transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
+//         }
+//     }
 
-    .info {
-        display: flex;
-        padding: 0;
-        justify-content: space-between;
-    }
-}
+//     .info {
+//         display: flex;
+//         padding: 0;
+//         justify-content: space-between;
+//     }
+// }
 
 .fw-600 {
     font-weight: 600;
