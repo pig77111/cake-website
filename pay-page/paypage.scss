@@ -1,14 +1,16 @@
 // sec1 start done
 
-@import "scss/bootstrap.scss";
+@import "../scss/bootstrap.scss";
 
+// 自己寫的
 body {
     padding: 0;
     margin: 0;
     color: #3e5b43;
 }
 
-a {
+a { 
+    
     &:hover {
         text-decoration-line: none;
         color: #3e5b43;
