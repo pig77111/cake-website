@@ -21,7 +21,7 @@ a {
 
 .btn {
     &:hover {
-        background-color: #eaf0ed;
+        background-color: #FEE180;
     }
     a {
         text-decoration-line: none;
@@ -91,7 +91,7 @@ a {
     // margin-left: 19px;
 
     a:hover {
-        border-bottom: #eaf0ed 2px solid;
+        border-bottom:#FEE180 2px solid;
 
         //    margin-left: 19px;
     }
@@ -196,8 +196,8 @@ a {
         text-align: center;
 
         &:hover {
-            color: #ffff !important;
-            background-color: #3e5b43 !important;
+            color:  #3e5b43!important;
+            background-color:  #FEE180!important;
             transition: cubic-bezier(0.55, 0.085, 0.68, 0.53);
         }
     }
