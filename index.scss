@@ -16,20 +16,17 @@ a {
 }
 
 .humberger {
-    margin: auto;
+    margin: auto 0px auto 5px;
 }
 
-.btn
-{
+.btn {
     &:hover {
-    background-color: #eaf0ed;}
+        background-color: #eaf0ed;
+    }
     a {
-        
         text-decoration-line: none;
     }
-
 }
-
 
 .d-flex {
     display: flex;
@@ -304,165 +301,188 @@ a > .page.active {
     }
 }
 
-.footer .logo img {
-    width: 40px;
-    height: 40px;
+.footer {
+    .logo img {
+        width: 40px;
+        height: 40px;
 
-    margin: auto 0px;
-}
-
-.contact .logo {
-    width: 276px;
-    display: flex;
-}
-
-.footer .c-container {
-    justify-content: space-between;
-}
-
-.logo-text {
-    /* 上方綠色 */
-    font-size: 24px;
-    line-height: 29px;
-    text-align: center;
-    margin: auto 0px auto 20px;
-}
-
-.input-btn {
-    width: 380px;
-    height: 56px;
-}
-
-.shop-wrap,
-.copy-wrap,
-.c-container {
-    max-width: 940px;
-    margin: auto;
-}
-
-.copy-wrap {
-    margin-top: 37px;
-}
-
-.footer .info,
-.slogan,
-.icon > img {
-    margin-top: 30px;
-}
-
-.shop-wrap img {
-    width: 171.22px;
-    height: 26.6px;
-    margin-top: 8.9px;
-}
-
-.info-text {
-    /* width: 227px; */
-    margin-top: 115.5px;
-    color: #3e5b43;
-}
-
-.shop-wrap > .info {
-    font-size: 16px;
-    line-height: 20px;
-
-    flex-direction: column;
-}
-
-.icon img {
-    width: 30px;
-    height: 30px;
-}
-
-.foot-bottom {
-    height: 341px;
-}
-
-.slogan {
-    font-size: 24px;
-    width: 59.28px;
-    color: #3e5b43;
-
-    margin-left: auto;
-}
-
-.copy {
-    font-size: 16px;
-    line-height: 19px;
-    display: flex;
-
-    align-items: flex-end;
-    margin-left: auto;
-    color: #3e5b43;
-}
-
-.slo-text1 {
-    margin-top: 11.14px;
-    padding-right: 13.23px;
-}
-
-.straight {
-    display: flex;
-    justify-content: center;
-
-    div {
-        width: 1px;
-        height: 50px;
-        background: #3e5b43;
+        margin: auto 0px;
     }
-}
 
-.dot {
-    width: 30px;
-    height: 30px;
-    background-color: #3e5b43;
-}
+    .contact .logo {
+        width: 276px;
+        display: flex;
+    }
 
-.input-btn {
-    padding: 30px 0;
-    margin-right: 0px;
-}
+    .c-container {
+        justify-content: space-between;
+    }
 
-.email-form {
-    position: relative;
+    .logo-text {
+        /* 上方綠色 */
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        margin: auto ;
+    }
 
-    height: 56px;
-
-    input {
-        width: 316px;
+    .input-btn {
+        width: 380px;
         height: 56px;
-        border: none;
-        padding: 0;
     }
 
-    img {
-        position: absolute;
-        padding: 16px 20px;
-        pointer-events: none;
+    .shop-wrap,
+    .copy-wrap,
+    .c-container {
+        max-width: 940px;
+        margin: auto;
     }
-}
 
-.input-btn > button {
-    width: 64px;
-    height: 56px;
-    background: #ffe180;
-    border: none;
+    .copy-wrap {
+        margin-top: 37px;
+    }
+
+    .info,
+    .slogan,
+    .icon > img {
+        margin-top: 30px;
+    }
+
+    .shop-wrap img {
+        width: 171.22px;
+        height: 26.6px;
+        margin-top: 8.9px;
+    }
+
+    .info-text {
+        /* width: 227px; */
+        margin-top: 115.5px;
+        color: #3e5b43;
+    }
+
+    .shop-wrap {
+        .info {
+            font-size: 16px;
+            line-height: 20px;
+
+            flex-direction: column;
+        }
+    }
+
+    .icon img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .foot-bottom {
+        height: 341px;
+    }
+
+    .slogan {
+        font-size: 24px;
+        width: 59.28px;
+        color: #3e5b43;
+
+        margin-left: auto;
+    }
+
+    .copy {
+        font-size: 16px;
+        line-height: 19px;
+        
+        
+
+        // align-items: flex-end;
+        
+        color: #3e5b43;
+    }
+
+    .slo-text1 {
+        margin-top: 11.14px;
+        padding-right: 13.23px;
+    }
+
+    .straight {
+        display: flex;
+        justify-content: center;
+
+        div {
+            width: 1px;
+            height: 50px;
+            background: #3e5b43;
+        }
+    }
+
+    .dot {
+        width: 30px;
+        height: 30px;
+        background-color: #3e5b43;
+    }
+
+    .input-btn {
+        padding: 30px 0;
+        margin-right: 0px;
+    }
+
+    .email-form {
+        position: relative;
+
+        height: 56px;
+
+        input {
+            width: 316px;
+            height: 56px;
+            border: none;
+            padding: 0;
+        }
+
+        img {
+            position: absolute;
+            padding: 16px 20px;
+            pointer-events: none;
+        }
+    }
+
+    .input-btn {
+        .arrow {
+            // 黃色按鈕
+            width: 64px;
+            height: 56px;
+            text-align: center;
+            // background: #ffe180;
+            // border: none;
+        }
+    }
 }
 
 @media screen and (max-width: 414px) {
+    // 手機版
     .home,
     .sweet,
     .login {
         display: none;
     }
+    .navbar div>a {
+       padding: 0;
+      
+    }
+
+    .logo-img {
+        margin-left:auto;
+        margin-right:auto;
+        width: 230px;
+    }
+
 
     .humberger {
         display: flex;
-        margin: auto 20px;
+        
+        // margin-right: auto ;
+
     }
 
     .nav-img {
-        margin-right: 20px;
+        margin-left: auto;
     }
 
     .banner {
@@ -472,7 +492,7 @@ a > .page.active {
     .content {
         flex-direction: column;
     }
-
+   
     .menu {
         width: 100%;
     }
@@ -499,21 +519,41 @@ a > .page.active {
         flex-direction: column;
     }
 
+
+    .footer .input-btn {
+    padding: 0 10px;
+    
+    margin: 0px 0px 30px ;
+    }
+
+    .arrow{
+        width: 48px;
+        height: 48px;
+        border: none;
+        z-index: 1;
+    }
+
     .contact > .logo {
         margin: 30px auto;
     }
 
     .input-btn {
-        width: 315px;
+        padding: 0;
+        width: 100%;
         /* height: 56px; */
         margin: auto;
+
         /* justify-content: center; */
 
         /* flex-wrap: nowrap; */
     }
 
     .email-form {
-        width: 251px;
+        width: 80%;
+    }
+
+    .arrow{
+        width: 20%;
     }
 
     .footer {
@@ -526,18 +566,21 @@ a > .page.active {
         padding-left: 30px;
     }
 
+    .logo-text {
+        /* 上方綠色 */
+        font-size: 24px;
+        line-height: 29px;
+        text-align: center;
+        margin: auto 0px auto 20px;
+    }
+
     .slogan {
         display: none;
     }
 
-    .copy-wrap {
-        flex-direction: column;
-    }
+    
 
-    .copy {
-        align-items: flex-start;
-        margin: 23px 0 0 0;
-    }
+    
 
     .footer > .contact {
         height: 100%;
