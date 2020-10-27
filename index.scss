@@ -323,7 +323,7 @@ a > .page.active {
         font-size: 24px;
         line-height: 29px;
         text-align: center;
-        margin: auto ;
+        margin: auto;
     }
 
     .input-btn {
@@ -389,11 +389,9 @@ a > .page.active {
     .copy {
         font-size: 16px;
         line-height: 19px;
-        
-        
 
         // align-items: flex-end;
-        
+
         color: #3e5b43;
     }
 
@@ -462,23 +460,20 @@ a > .page.active {
     .login {
         display: none;
     }
-    .navbar div>a {
-       padding: 0;
-      
+    .navbar div > a {
+        padding: 0;
     }
 
     .logo-img {
-        margin-left:auto;
-        margin-right:auto;
+        margin-left: auto;
+        margin-right: auto;
         width: 230px;
     }
 
-
     .humberger {
         display: flex;
-        
-        // margin-right: auto ;
 
+        // margin-right: auto ;
     }
 
     .nav-img {
@@ -492,7 +487,7 @@ a > .page.active {
     .content {
         flex-direction: column;
     }
-   
+
     .menu {
         width: 100%;
     }
@@ -519,18 +514,19 @@ a > .page.active {
         flex-direction: column;
     }
 
-
     .footer .input-btn {
-    padding: 0 10px;
-    
-    margin: 0px 0px 30px ;
+        padding: 0 10px;
+
+        margin: 0px 0px 30px;
     }
 
-    .arrow{
+    .arrow {
         width: 48px;
         height: 48px;
         border: none;
         z-index: 1;
+
+        width: 20%;
     }
 
     .contact > .logo {
@@ -547,13 +543,8 @@ a > .page.active {
 
         /* flex-wrap: nowrap; */
     }
-
-    .email-form {
-        width: 80%;
-    }
-
-    .arrow{
-        width: 20%;
+    .btn.btn-yellow{
+        border: none;
     }
 
     .footer {
@@ -573,14 +564,6 @@ a > .page.active {
         text-align: center;
         margin: auto 0px auto 20px;
     }
-
-    .slogan {
-        display: none;
-    }
-
-    
-
-    
 
     .footer > .contact {
         height: 100%;
